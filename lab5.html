@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily News Online</title>
+  <style>
+    /* Base Reset & Typography */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin: 0 0 10px;
+}
+
+/* Header & Footer */
+header, footer {
+  text-align: center;
+  color: #fff;
+ 
+}
+
+header {
+  background: #4CAF50;
+  padding: 20px;
+}
+
+footer {
+  background: #333;
+  font-size: 14px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 1px;
+}
+
+/* Layout */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.content {
+  flex: 1;
+}
+
+aside {
+  width: 300px;
+  height: 150px;
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Articles & Sections */
+article {
+  background: #eef5f9;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background: #4CAF50;
+  color: white;
+}
+
+/* Images and Figures */
+figure {
+  background: #fafafa;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Daily News Online</h1>
+    <p>Your trusted source for the latest news</p>
+  </header>
+
+  <main>
+    <section class="content">
+      <article>
+        <h2>Breaking News: Technology Advances in AI</h2>
+        <p>Artificial Intelligence (AI) continues to grow rapidly... transforming industries globally.</p>
+        <h3>AI Advancements in 2024</h3>
+        <table>
+          <thead>
+            <tr><th>Field</th><th>Key Development</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Healthcare</td><td>AI-assisted Surgeries</td></tr>
+            <tr><td>Transportation</td><td>Autonomous Vehicles</td></tr>
+            <tr><td>Retail</td><td>AI Chatbots</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article>
+        <h2>Global Warming and Its Effects on Marine Life</h2>
+        <p>Global warming has had devastating effects on marine ecosystems...</p>
+        <figure>
+          <img src="https://via.placeholder.com/600x400" alt="Coral Reef" />
+          <figcaption>Coral bleaching due to rising sea temperatures.</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <aside>
+      <h3>Latest Headlines</h3>
+      <ul>
+        <li><a href="#">New Vaccine Shows Promising Results</a></li>
+        <li><a href="#">Electric Car Sales Surge Globally</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Daily News Online. All rights reserved.</p>
+  </footer>
+</body>
+</html>
