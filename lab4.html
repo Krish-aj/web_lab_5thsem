@@ -1,0 +1,184 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Registration Form</title> 
+    <style> 
+        body { 
+            font-family: Arial; 
+            background-color: #c9c8c8; 
+        } 
+ 
+        h2 { 
+            text-align: center; 
+            color: #528053; 
+            font-size: 24px; 
+        } 
+ 
+        /* Styling the form container */ 
+        .form-container { 
+            background-color: #96aeb8fb; 
+            border-radius: 50px; 
+          box-shadow: 0 4px 8px rgba(78, 27, 27, 0.5); 
+            width: 60%;    /* left to right distance */
+            margin: 10px auto; /*distance from top to bottom*/
+            padding: 60px; /* border to text distance inside */
+        } 
+ 
+        /* Table alignment */ 
+        table { 
+            width: 100%; 
+            margin: 0 auto; 
+        } 
+ 
+        td { 
+            padding: 10px; 
+            
+        } 
+ 
+        /* Styling input elements */ 
+        input[type="text"], 
+        input[type="email"], 
+        input[type="password"], 
+        input[type="date"], 
+        input[type="tel"]  
+ 
+      { 
+            width: 100%; 
+            padding: 8px; 
+            border: 1px solid #ffffff; 
+            border-radius: 4px; 
+        } 
+ 
+        /* Styling select, textarea, and other inputs */ 
+        select, textarea { 
+            width: 100%; 
+            padding: 8px; 
+            border: 1px solid #ffffff; 
+            border-radius: 4px; 
+        } 
+ 
+        input[type="radio"], input[type="checkbox"] { 
+            margin-right: 5px; 
+        } 
+ 
+        /* Button styling */ 
+        input[type="submit"] { 
+            background-color: #f1ebeb; 
+
+            color: rgb(29, 27, 27); 
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 4px; 
+            cursor:pointer; 
+        } 
+ 
+        input[type="submit"]:hover { 
+            background-color: #77b369;
+            
+        } 
+ 
+        /* Font size and color styling */ 
+        label { 
+            font-size: 14px; 
+            font-weight: bold;
+            color: #333; 
+        } 
+ 
+        th { 
+            font-size: 16px; 
+            color: #528053; 
+            text-align: left; 
+        } 
+ 
+ 
+ 
+        .note { 
+            font-size: 12px; 
+            color:#528053; 
+        } 
+    </style> 
+</head> 
+<body> 
+ 
+    <h2>Registration Form</h2> 
+ 
+    <div class="form-container"> 
+        <form action="#" method="post" autocomplete="on"> 
+            <table> 
+                <tr> 
+                    <th colspan="2">Personal Information</th> 
+                </tr> 
+                <tr> 
+                    <td><label for="fname">Full Name:</label></td> 
+                    <td><input type="text" id="fname" name="fname" required></td> 
+                </tr> 
+            
+                <tr> 
+                    <td><label for="email">Email:</label></td> 
+                     
+                    <td><input type="email" id="email" name="email" required></td> 
+                </tr> 
+                <tr> 
+                    <td><label for="password">Password:</label></td> 
+                    <td><input type="password" id="password" name="password" required></td> 
+                </tr> 
+                <tr> 
+                    <td><label for="dob">Date of Birth:</label></td> 
+                    <td><input type="date" id="dob" name="dob" required></td> 
+                </tr> 
+                <tr> 
+                    <td><label for="phone">Phone Number:</label></td> 
+                    <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required></td> 
+                </tr> 
+                <tr> 
+                    <td><label for="gender">Gender:</label></td> 
+                    <td> 
+                        <input type="radio" id="male" name="gender" value="male"> 
+                        <label for="male">Male</label> 
+                        <input type="radio" id="female" name="gender" value="female"> 
+
+                        <label for="female">Female</label> 
+                    </td> 
+                </tr> 
+                <tr> 
+                    <td><label for="course">Select Course:</label></td> 
+                    <td> 
+                        <select id="course" name="course"> 
+                            <option value="cs">Computer Science</option> 
+                            <option value="it">Information Technology</option> 
+                            
+                        </select> 
+                    </td> 
+                </tr> 
+                <tr> 
+                    <td><label for="hobbies">Hobbies:</label></td> 
+                    <td> 
+                        <input type="checkbox" id="sports" name="hobbies" value="sports"> 
+                        <label for="sports">Sports</label> 
+                        <input type="checkbox" id="music" name="hobbies" value="music"> 
+                        <label for="music">Music</label> 
+                        
+                    </td> 
+                </tr> 
+                <tr> 
+                    <td><label for="address">Address:</label></td> 
+                    <td><textarea id="address" name="address" rows="4" required></textarea></td> 
+                </tr> 
+                <tr> 
+                    <td colspan="2"> 
+                        <p class="note">* All fields are mandatory</p> 
+                    </td> 
+                </tr> 
+                <tr> 
+                    <td colspan="2" style="text-align: center;"> 
+                        <input type="submit" value="Submit"> 
+                    </td> 
+                </tr> 
+            </table> 
+        </form> 
+    </div> 
+ 
+</body> 
+</html>
