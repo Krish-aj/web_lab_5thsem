@@ -1,0 +1,129 @@
+CSS USED IN THIS FILE IS TO BE ADDED IN EXTERNAL CSS FILE
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Styled HTML Elements</title> 
+    <style>
+        /* Style for h2 tag */ 
+h2 { 
+    color: #4CAF50; 
+    font-size: 28px; 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    margin-bottom: 20px; 
+} 
+ 
+/* Style for h3 tag */ 
+h3 { 
+    color: #ff5722; 
+    font-size: 22px; 
+    font-family: 'Georgia', serif; 
+    margin-left: 10px; 
+} 
+/* Style for hr tag */ 
+hr { 
+    border: 2px solid #333; 
+    width: 80%; 
+    margin: 10px auto; 
+} 
+/* Style for p tag */ 
+p { 
+    font-size: 16px; 
+    line-height: 1.6; 
+    color: #555; 
+ margin: 15px 0; 
+} 
+ 
+/* Style for div tag */ 
+div { 
+    padding: 10px; 
+    border: 2px solid #333; 
+    background-color: #f9f9f9; 
+    margin: 10px 0; 
+} 
+ 
+/* Style for span tag */ 
+span { 
+    color: #ff9800; 
+    font-weight: bold; 
+} 
+ 
+/* Style for time tag */ 
+time { 
+    font-style: italic; 
+    color: #9c27b0; 
+} 
+ 
+/* Style for img tag */ 
+img { 
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+} 
+ 
+/* Style for a tag */ 
+a { 
+    color: #2196F3;
+     text-decoration: none; 
+} 
+ 
+a:hover { 
+    color: #f44336; 
+    text-decoration: underline; 
+} 
+ 
+/* Class selector for a special paragraph */ 
+.special-paragraph { 
+    color: #e91e63; 
+    font-style: italic; 
+    border-left: 4px solid #e91e63; 
+    padding-left: 10px; 
+} 
+ 
+/* ID selector for unique div */ 
+#unique-div { 
+    background-color: #ffeb3b; 
+    border: 2px dashed #333; 
+    padding: 15px; 
+} 
+ 
+/* Descendant selector for span inside a div */ 
+div span { 
+    font-size: 18px; 
+    color: #3f51b5; 
+} 
+ 
+/* Pseudo-class for p tag on hover */ 
+p:hover { 
+    background-color: #f1f1f1; 
+    transition: background-color 0.3s; 
+}
+    </style>
+</head> 
+<body> 
+ 
+    <h2>This is an H2 Heading</h2> 
+    <h3>This is an H3 Heading</h3> 
+ 
+    <hr> 
+ 
+    <p>This is a regular paragraph. Hover over this paragraph to see the background color change.</p> 
+    <p class="special-paragraph">This is a special paragraph styled using a class selector.</p> 
+ 
+    <div id="unique-div"> 
+        This is a unique div styled with an ID selector. 
+        <span>This span is inside a div and styled with a descendant selector.</span> 
+    </div> 
+ 
+    <time datetime="2024-09-13">September 13, 2024</time> - 
+    <p>This is another paragraph with an <span>inline span</span> inside it.</p> 
+ 
+    <a href="https://www.example.com">This is a link to example.com</a> 
+ 
+    <img src="https://via.placeholder.com/600x400" alt="Placeholder Image"> 
+ 
+</body> 
+</html> 
