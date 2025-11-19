@@ -1,0 +1,93 @@
+File Structure 
+ index.html 
+ styles.css 
+ textfile.txt (plain text file) 
+ data.json (JSON file) 
+ script.js (JavaScript file) 
+
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>AJAX Example</title> 
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -    <script src="script.js" defer></script> 
+</head> 
+<body> 
+    <h1>AJAX Example</h1> 
+ 
+    <h2>AJAX Without jQuery</h2> 
+    <button id="fetch-text">Fetch Text File (No jQuery)</button> 
+    <div id="text-content"></div> 
+ 
+    <h2>AJAX With jQuery</h2> 
+    <button id="fetch-text-jquery">Fetch Text File (With jQuery)</button> 
+    <div id="text-content-jquery"></div> 
+ 
+    <h2>JSON Example</h2> 
+    <button id="fetch-json">Fetch JSON Data</button> 
+    <div id="json-content"></div> 
+</body> 
+</html> 
+CSS File (styles.css) 
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 20px 
+button { 
+ m-argin: 10px 0; 
+} 
+ 
+#text-content, #text-content-jquery, #json-content { 
+    border: 1px solid #ddd; 
+    padding: 10px; 
+    margin-top: 10px; 
+    background-color: #f9f9f9; 
+} 
+Text File (textfile.txt) 
+This is a sample text file used to demonstrate AJAX requests. 
+JSON File (data.json) 
+{ 
+    "name": "John Doe", 
+    "age": 30, 
+    "email": "john.doe@example.com" 
+} 
+
+
+
+javaScript File
+
+document.addEventListener('DOMContentLoaded', function() { 
+    // Fetch text file content using native AJAX 
+    document.getElementById('fetch-text').addEventListener('click', function() { 
+        var xhr = new XMLHttpRequest(); 
+        xhr.open('GET', 'textfile.txt', true); 
+        xhr.onreadystatechange = function() { 
+            if (xhr.readyState === 4 && xhr.status === 200) { 
+                document.getElementById('text-content').innerText = xhr.responseText; 
+            } 
+        }; 
+      xhr.send(); 
+    }); 
+}); 
+
+AJAX with jquery  file
+
+$(document).ready(function() { 
+    // Manually parse JSON 
+    $('#fetch-json').click(function() { 
+        $.ajax({ 
+            url: 'data.json', 
+            method: 'GET', 
+            dataType: 'text', // Receive as plain text 
+            success: function(data) { 
+                var parsedData = $.parseJSON(data); 
+ $('#json-content'<strong>Name:</strong> ' + parsedData.name + '<br>' + 
+                    '<strong>Age:</strong> ' + parsedData.age + '<br>' + 
+                    '<strong>Email:</strong> ' + parsedData.email 
+                ); 
+            } 
+        }); 
+    });
+
